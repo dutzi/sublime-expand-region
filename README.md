@@ -119,6 +119,14 @@ The "Packages" directory is located at:
 ```
 Note: third party plugins can not properly hook into the history. So soft-undo in basically only a undo expand selection. Soft-redo will not work.
 
+LPT: Assign `ctrl+shift+up` to **expand_region** and `ctrl+shift+down` to **soft_undo** and get a really nice behavior.
+
+```json
+[
+    { "keys": ["ctrl+shift+up"], "command": "expand_region" },
+    { "keys": ["ctrl+shift+down"], "command": "soft_undo" },
+]
+```
 
 ## Develop
 
